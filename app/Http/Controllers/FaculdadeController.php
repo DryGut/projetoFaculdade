@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Faculdade;
 
 class FaculdadeController extends Controller{
-    
+
     public function paginaInicial(){
         return view('templates.paginainicial');
     }
