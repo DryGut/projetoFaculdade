@@ -7,6 +7,9 @@
 			<i class="bi bi-search"></i>
 		</button>
 	</div>
+    <div>
+        <img src="mapabrasil.jpg">
+    </div>
 	<div class="bg-image h-100" style="background-color: #f5f7fa;">
 		<div class="mask d-flex align-items-center h-100">
 			<div id="c-busca" class="container-fluid">
@@ -29,4 +32,4 @@
 		</div>
 	</div>
 </section>
-@endsection					
+@endsection

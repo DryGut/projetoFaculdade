@@ -6,7 +6,7 @@ const htmlTag = {
 	searchBtn: document.getElementById('btn')
 };
 
-const getFaculdades = async()=>{
+async function getFaculdades(){
 	let url = `http://localhost:8000/instituicoes`;
 	let response = await fetch(url);
 	if(response.status === 200){
@@ -27,7 +27,7 @@ const createTable = (field, field1, field2)=>{
 	cell2.innerHTML = field2;
 }
 
-const showFaculdades = async(field)=>{
+async function showFaculdades(field){
 	const data = await getFaculdades();
 	for(let value in data){
 		if(field === data[value].estado){

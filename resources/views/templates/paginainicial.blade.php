@@ -4,7 +4,7 @@
 	<div class="container py-5 h-100">
 		<div class="row d-flex justify-content-center align-items-center h-100">
 			<div class="card text-center">
-				<div class="card-header">
+				<div class="card-header" style="background-color: yellow;">
 					CST - Análise e Desenvolvimento de Sistemas
 				</div>
 				<div class="card-body" style="position: relative; top: 4rem;">
@@ -12,10 +12,10 @@
 					<p class="card-text">tarefa 2 do projeto</p>
 					<a href="{{route('login')}}" onclick="alert('Realize o login para acessar esta área')" class="btn btn-primary">Ir para área de pesquisa</a>
 				</div>
-				<div id="calendario" class="card-footer">
+				<div id="calendario" class="card-footer" style="background-color: yellow;">
 					<script>
 						let data = new Date(Date.now());
-						document.getElementById('calendario').innerHTML = 'Recife, ' + data.toLocaleString('default', {day:'numeric', month: 'long', year:'numeric'}); 
+						document.getElementById('calendario').innerHTML = 'Recife, ' + data.toLocaleString('default', {day:'numeric', month: 'long', year:'numeric'});
 					</script>
 				</div>
 			</div>
