@@ -18,13 +18,16 @@ use App\Http\Controllers\FaculdadeController;
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])
-->name('home');
+    ->name('home');
 
 Route::get('/', [FaculdadeController::class, 'paginaInicial'])
-->name('inicial');
+    ->name('inicial');
 
 Route::get('/instituicoes', [FaculdadeController::class, 'listaJson'])
-->name('json');
+    ->name('json');
 
 Route::get('/busca', [FaculdadeController::class, 'areaDeBusca'])
-->name('busca');
+    ->name('busca');
+
+Route::get('/mostra/{estado}', [FaculdadeController::class, 'mostra'])
+    ->name('mostra');
